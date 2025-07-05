@@ -1,5 +1,5 @@
 ---
-title: "An example journal article"
+title: "Topological phase diagram of the Haldane model on a Bishamon-kikko–honeycomb lattice"
 authors:
 - Sogen Ikegami
 - Kiyu Fukui
@@ -15,9 +15,10 @@ doi: "https://doi.org/10.1103/PhysRevB.110.245107"
 ## Publication type.
 ## Accepts a single type but formatted as a YAML list (for Hugo requirements).Enter a publication type from the CSL standard.
 publication_types: ["article-journal"]
+
 ## Publication name and optional abbreviated publication name.
-#publication: "Physical Review B"#"*Journal of Source Themes, 1*(1)"
-#publication_short: "Phys. Rev. B"
+publication: "Physical Review B 110, 245107 (2024)." #"*Journal of Source Themes, 1*(1)"
+publication_short: "Phys. Rev. B 110, 245107 (2024)."
 #
 #url_pdf: http://arxiv.org/pdf/1512.04133v1
 #url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
