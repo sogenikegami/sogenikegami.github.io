@@ -5,12 +5,6 @@ cms_exclude: true
 
 # View
 view: card
-#title: CEMS symposium
-#
-#event: Hugo Blox Builder Conference
-#event_url: https://example.org
-#
-#location: RIKEN
 
 
 # Optional cover image (relative to `assets/media/` folder).
