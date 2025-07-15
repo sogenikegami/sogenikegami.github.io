@@ -4,7 +4,7 @@ cms_exclude: true
 #url: talk
 
 # View
-#view: card
+view: card
 #title: CEMS symposium
 #
 #event: Hugo Blox Builder Conference
