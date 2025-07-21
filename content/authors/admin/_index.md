@@ -69,8 +69,8 @@ work:
     company_name: 統計力学第二 (Statistical Mechanics II)
     company_url: ''
     company_logo: ''
-    date_start: 2024-10
-    date_end: 2025-02
+    date_start: 2024-10-01
+    date_end: 2025-02-28
     #summary: |
     #  Responsibilities include:
     #  - Migrated infrastructure to a new data center
@@ -125,7 +125,7 @@ work:
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 awards:
   - title: Outstanding Bachelor Thesis Award
-    date: '2024-03'
+    date: '2024-03-01'
     #url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
     #icon: edx
     #summary:
