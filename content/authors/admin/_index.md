@@ -65,12 +65,21 @@ education:
     #  url: 'https://example.com'
       
 work:
+  - position: MERIT
+    company_name: University of Tokyo
+    date_start: 2024-10-01
+    date_end: 2029-03-31
   - position: Teaching Assistant
     company_name: 統計力学第二 (Statistical Mechanics II)
     company_url: ''
     company_logo: ''
     date_start: 2024-10-01
     date_end: 2025-02-28
+  - position: ヒロセ研究者育成プログラム
+    company_name: ヒロセ財団 
+    company_url: 'https://hirose-isf.or.jp/'
+    date_start: 2024-04-01
+    date_end: 2029-03-31
     #summary: |
     #  Responsibilities include:
     #  - Migrated infrastructure to a new data center
