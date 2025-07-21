@@ -59,9 +59,5 @@ features:
   privacy_pack:
     enable: false
 
-params:
-  assets:
-    favicon: "/favicon.ico" # e.g. "/favicon.ico"
-    favicon16x16:  "/favicon.ico" # e.g. "/img/favicon-16x16.png"
-    favicon32x32:  "/favicon.ico" # e.g. "/img/favicon-32x32.png"
-    apple_touch_icon:  "/favicon.ico" # e.g. "/img/apple-touch-icon.png"
+favicon:
+  icon: "favicon.ico"
