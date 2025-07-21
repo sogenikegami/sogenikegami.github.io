@@ -1,4 +1,15 @@
-{{- /* layouts/partials/head.html */ -}}
-{{ partial "blox/head.html" . }}
-<link rel="icon" href="/media/icon.png" type="image/png">
+{{- /* layouts/partials/blox/head.html */ -}}
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  {{ partial "blox/meta.html" . }}
+  {{ partial "blox/stylesheets.html" . }}
+  {{ partial "blox/scripts.html" . }}
+
+  <!-- ここでfaviconを上書き -->
+  <link rel="icon" href="/media/icon.png?v=2" type="image/png" />
+
+  {{/* もし他にhead内に必要な要素あればここに追加 */}}
+</head>
+
 
