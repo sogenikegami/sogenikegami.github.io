@@ -12,11 +12,7 @@ doi: "https://doi.org/10.1103/PhysRevB.110.245107"
 
 ## Schedule page publish date (NOT publication's date).
 #publishDate: "2024-12-03T00:00:00Z"
-## Publication type.
-## Accepts a single type but formatted as a YAML list (for Hugo requirements).Enter a publication type from the CSL standard.
 publication_types: ["article-journal"]
-
-## Publication name and optional abbreviated publication name.
 publication: "Physical Review B 110, 245107 (2024)." #"*Journal of Source Themes, 1*(1)"
 publication_short: "Phys. Rev. B 110, 245107 (2024)."
 #
