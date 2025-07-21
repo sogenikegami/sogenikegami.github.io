@@ -1,5 +1,5 @@
 ---
-title: Example Talk
+title: Topological phase diagram of the Haldane model on a Bishamon-kikko--honeycomb lattice
 
 event: CEMS Topical Meeting on Emergent Phenomena in Topological Quantum Materials
 event_url: https://cems.riken.jp/topicalmeeting/toppqm2024/program.html
