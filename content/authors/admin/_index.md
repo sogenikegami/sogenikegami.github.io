@@ -146,6 +146,6 @@ awards:
 ## About Me
 
 I am a master student of condensed matter theory at Motome lab, the University of Tokyo.
-My research interests broadly range include quantum many-body systems, quantum informtion, quantum field theory.
+My research interests broadly include quantum many-body systems, quantum informtion, quantum field theory.
 In particular, I am currently researching quantum spin liquids. 
 
