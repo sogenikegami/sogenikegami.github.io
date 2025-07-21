@@ -1,6 +1,6 @@
 ---
 # Leave the homepage title empty to use the site title
-title: ""
+title: "Sogen Ikegami"
 date: 2025-07-15
 type: landing
 
