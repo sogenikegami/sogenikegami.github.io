@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Presentation</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="include.js" defer></script>
+  <style>
+    /* ====== タブの基本デザイン ====== */
+    .tabs {
+      display: flex;
+      margin-top: 1rem;
+      border-bottom: 2px solid #ccc;
+    }
+    .tab {
+      padding: 10px 20px;
+      cursor: pointer;
+      border: 1px solid #ccc;
+      border-bottom: none;
+      border-radius: 10px 10px 0 0;
+      background-color: #f4f4f4;
+      margin-right: 5px;
+      font-weight: bold;
+    }
+    .tab.active {
+      background-color: white;
+      border-bottom: 2px solid white;
+    }
+
+    /* ====== コンテンツの共通部分 ====== */
+    .tab-content {
+      display: none;
+      border: 1px solid #ccc;
+      border-radius: 0 10px 10px 10px;
+      padding: 1rem;
+      background-color: white;
+    }
+    .tab-content.active {
+      display: block;
+    }
+
+    /* ====== サブタブ（oral / poster） ====== */
+    .subtabs {
+      display: flex;
+      margin-top: 1rem;
+      border-bottom: 1px solid #ccc;
+    }
+    .subtab {
+      padding: 6px 12px;
+      cursor: pointer;
+      background-color: #eee;
+      margin-right: 5px;
+      border-radius: 5px 5px 0 0;
+    }
+    .subtab.active {
+      background-color: #ddd;
+      font-weight: bold;
+    }
+    .subtab-content {
+      display: none;
+      margin-top: 1rem;
+    }
+    .subtab-content.active {
+      display: block;
+    }
+
+    ul {
+      line-height: 1.6;
+    }
+  </style>
+</head>
+  
+
+<body>
+  <div id="header"></div>
+
+  <div id="content-wrapper">
+
+  <main>
+    <h1>Presentations</h1>
+
+    <!-- ===== 上段タブ：International / Domestic ===== -->
+    <div class="tabs">
+      <div class="tab active" data-tab="international">International</div>
+      <div class="tab" data-tab="domestic">Domestic</div>
+    </div>
+
+    <!-- ===== International ===== -->
+    <div id="international" class="tab-content active">
+      <div class="subtabs">
+        <div class="subtab active" data-subtab="int-oral">Oral</div>
+        <div class="subtab" data-subtab="int-poster">Poster</div>
+      </div>
+
+      <div id="int-oral" class="subtab-content active">
+        <ul>
+          <li>Ikegami, S., *International Conf. on Magnetism 2025*, Tokyo, Japan.</li>
+          <li>Ikegami, S., *APS March Meeting 2024*, Chicago, USA.</li>
+        </ul>
+      </div>
+
+      <div id="int-poster" class="subtab-content">
+        <ul>
+          <li>Ikegami, S., *ICM 2023*, Kyoto, Japan.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ===== Domestic ===== -->
+    <div id="domestic" class="tab-content">
+      <div class="subtabs">
+        <div class="subtab active" data-subtab="dom-oral">Oral</div>
+        <div class="subtab" data-subtab="dom-poster">Poster</div>
+      </div>
+
+      <div id="dom-oral" class="subtab-content active">
+        <ul>
+          <li>池上宗玄, 日本物理学会 第80回年次大会 (2025).</li>
+        </ul>
+      </div>
+
+      <div id="dom-poster" class="subtab-content">
+        <ul>
+          <li>池上宗玄, 日本物理学会 第79回年次大会 (2024).</li>
+        </ul>
+      </div>
+    </div>
+
+  </main>
+
+  <div id="footer"></div>
+
+  <script>
+    // ===== 上段タブ切り替え =====
+    const tabs = document.querySelectorAll('.tab');
+    const tabContents = document.querySelectorAll('.tab-content');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tabContents.forEach(c => c.classList.remove('active'));
+        tab.classList.add('active');
+        document.getElementById(tab.dataset.tab).classList.add('active');
+      });
+    });
+
+    // ===== サブタブ切り替え =====
+    const subtabs = document.querySelectorAll('.subtab');
+    const subtabContents = document.querySelectorAll('.subtab-content');
+    subtabs.forEach(subtab => {
+      subtab.addEventListener('click', () => {
+        const parent = subtab.closest('.tab-content');
+        const localSubtabs = parent.querySelectorAll('.subtab');
+        const localContents = parent.querySelectorAll('.subtab-content');
+        localSubtabs.forEach(st => st.classList.remove('active'));
+        localContents.forEach(sc => sc.classList.remove('active'));
+        subtab.classList.add('active');
+        parent.querySelector(`#${subtab.dataset.subtab}`).classList.add('active');
+      });
+    });
+  </script>
+  
+    <div id="footer"></div>
+  </div>
+</body>
+</html>
