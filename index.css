@@ -38,6 +38,9 @@ ul.navigation a::first-line{
 font-size: 16px;
 font-weight: bold;
 }
+ul.navigation li:hover{
+background: #C9C9C9;
+}
 
 h1 {
 	font-size: 26px;
