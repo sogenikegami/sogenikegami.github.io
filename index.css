@@ -8,7 +8,7 @@ body {
 }
 #header-container {
   margin: 0 auto;
-  width: 694px;
+  width: 900px;
 }
 header {
 	background-color: #EBEBEB;/*214555*/
@@ -70,7 +70,7 @@ h2 {
 	border-bottom: 1px solid #999;
 }
 #content-wrapper {margin: 0 auto;
-    width: 694px;}
+    width: 900px;}
 main {
 	color: #333;
 }
