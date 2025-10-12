@@ -16,6 +16,29 @@ header {
 #head-inner {
     padding: 25px 0;
 }
+
+*{box-sizing: border-box;}
+
+ul.navigation{
+background: #EBEBEB;
+padding: 0;
+text-align: center;
+}
+ul.navigation li{
+display: inline-block;
+}
+
+ul.navigation li a{
+display: block;
+padding: 1em;
+color: #1B1161;
+text-decoration: none;
+}
+ul.navigation a::first-line{
+font-size: 16px;
+font-weight: bold;
+}
+
 h1 {
 	font-size: 26px;
 	font-weight: bold;
